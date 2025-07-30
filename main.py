@@ -14,7 +14,7 @@ logging.basicConfig(
 
 app = FastAPI()
 
-@app.post("/api/scooter/update")
+@app.post("/")
 async def update_scooter_data(request: Request):
     try:
         # 1. حاول تقرأ البيانات كنص (لأن بعض الأجهزة ترسل نصًا خامًا وليس JSON)
